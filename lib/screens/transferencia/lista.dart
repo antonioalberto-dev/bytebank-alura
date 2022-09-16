@@ -17,7 +17,7 @@ class ListaTransferenciaState extends State<ListaTransferencia> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Transferencias'),
+        title: const Text('Transfêrencias'),
       ),
       body: ListView.builder(
         itemCount: widget._transferencias.length,

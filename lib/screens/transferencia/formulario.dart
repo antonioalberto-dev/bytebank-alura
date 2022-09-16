@@ -44,9 +44,15 @@ class FormularioTransferenciaState extends State<FormularioTransferencia> {
             Padding(
               padding: const EdgeInsets.fromLTRB(0, 20.0, 0, 0),
               child: ElevatedButton(
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: const Text('Salvar'),
+                style: TextButton.styleFrom(
+                  backgroundColor: Colors.teal.shade50,
+                  textStyle: const TextStyle(
+                    fontWeight: FontWeight.w600,
+                  ),
+                ),
+                child: const Padding(
+                  padding: EdgeInsets.all(10.0),
+                  child: Text('Salvar'),
                 ),
                 onPressed: () => _criaTransferencia(context),
               ),
